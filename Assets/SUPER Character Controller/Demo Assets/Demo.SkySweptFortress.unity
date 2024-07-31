@@ -5446,6 +5446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ty
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f92a48cd4fae6a74590af6f1eaa51ed1, type: 3}
+      propertyPath: m_TagString
+      value: PlayerAnimator
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: f92a48cd4fae6a74590af6f1eaa51ed1, type: 3}
       propertyPath: m_Controller
       value: 
@@ -6927,71 +6931,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6302401440550763599, guid: 0db3745945fa2194780383875f653bd1, type: 3}
   m_PrefabInstance: {fileID: 1450028713}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &891926247
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1000010675638318, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_Name
-      value: BloodStreamEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -45.263
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 16.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 44.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.94694734
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.32138887
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -37.494003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180.00002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000010596725160, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 51
-      objectReference: {fileID: 0}
-    - target: {fileID: 198000014159833656, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
-      propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
 --- !u!1001 &899747519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17367,4 +17306,3 @@ SceneRoots:
   - {fileID: 218931640}
   - {fileID: 543450652301865925}
   - {fileID: 48897209}
-  - {fileID: 891926247}

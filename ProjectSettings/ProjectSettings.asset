@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 7f87fd464b0cb9a4b8c6055846ad1144
+  productGUID: 387ecd6a96b55ff4c9ed84e2d7fe9005
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Staj3DParkur
+  companyName: BestCompany
+  productName: 3D Platform Game
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -879,14 +879,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Staj3DParkur
+  metroPackageName: Ders 3D Platform
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Staj3DParkur
+  metroApplicationDescription: Ders 3D Platform
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -956,10 +956,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: f760970b-a5cc-44f8-b2ef-6029ca6efdf1
+  cloudProjectId: 36b02541-2b65-46f9-9e69-f63a97340479
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Staj3DParkur
+  projectName: Ders 3D Platform
   organizationId: muhammet963321_unity
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

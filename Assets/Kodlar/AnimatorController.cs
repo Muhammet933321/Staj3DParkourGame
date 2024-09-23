@@ -1,46 +1,52 @@
 using SUPERCharacter;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
     Animator animator;
-    [SerializeField] SUPERCharacterAIO Controller;
-    private void Start()
+    [SerializeField] SUPERCharacterAIO controller;
+
+    void Start()
     {
         animator = GetComponent<Animator>();
+
     }
-    private void Update()
+    void Update()
     {
-        AnimatorStateInfo StateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        if (Input.GetKey(KeyCode.Q) && animator.GetFloat("Speed") < 0.3f)
+        float Speed = animator.GetFloat("Speed");
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if (Input.GetKey(KeyCode.F) && Speed < 0.5f && stateInfo.IsName("Idle Walk Run Blend"))
         {
-            animator.SetBool("Dance", true);
-            Controller.enableMovementControl = false;
-            Controller.canJump = false;
+            animator.SetBool("BackFlip", true);
+            controller.enableMovementControl = false;
+            controller.canJump = false;
         }
-        else if (Input.GetKeyDown(KeyCode.E) && animator.GetFloat("Speed") < 0.3f)
+        else if(stateInfo.normalizedTime > 0.8f && stateInfo.IsName("BackFlip"))
         {
-            if (StateInfo.IsName("Idle Walk Run Blend"))
-            {
-                animator.SetBool("Sitting", true);
-                Controller.enableMovementControl = false;
-                Controller.canJump = false;
-            } 
-            else if(StateInfo.IsName("Sitting"))
+            controller.enableMovementControl = true;
+            controller.canJump = true;
+            animator.SetBool("BackFlip", false);
+        }
+
+        if (Input.GetKey(KeyCode.Q) && Speed < 0.5f)
+        {
+            if (stateInfo.IsName("SittingIle"))
             {
                 animator.SetBool("Sitting", false);
-                Controller.enableMovementControl = true;
-                Controller.canJump = true;
+                controller.enableMovementControl = true;
+                controller.canJump = true;
 
             }
-        }
-        else if(!animator.GetBool("Sitting"))
-        {
-            animator.SetBool("Dance", false);
-            Controller.enableMovementControl = true;
-            Controller.canJump = true;
+            else if (stateInfo.IsName("Idle Walk Run Blend"))
+            {
+                animator.SetBool("Sitting", true);
+                controller.enableMovementControl = false;
+                controller.canJump = false;
+            }
+
         }
 
     }

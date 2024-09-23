@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/AnaMenuSahnesi.unity
+    guid: 2478284731c9d074e883d75203dacbe4
+  - enabled: 1
+    path: Assets/Scenes/Level.unity
+    guid: 732043eca5005d34a9c4dd25557f0f07
   m_configObjects: {}
